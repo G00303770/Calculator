@@ -2,20 +2,17 @@ package ie.gmit;
 
 public class Calculator {
 
-    int firstNum;
-    int secondNum;
-    int sum;
+    private int firstNum;
+    private int secondNum;
 
-    public int getFirstNum() {
-        return firstNum;
+
+    public Calculator(){
+        this.firstNum = 0;
+        this.secondNum = 0;
     }
 
-    public int getSecondNum() {
-        return secondNum;
-    }
-
-    public int getSum() {
-        sum = firstNum + secondNum;
-        return sum;
-    }
+   public int add(int firstNum, int secondNum){
+      int result = firstNum + secondNum;
+      return result;
+   }
 }
